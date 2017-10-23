@@ -48,7 +48,7 @@
     $classifier = new SVC(Kernel::RBF, 10000);
     $classifier->train($randomSplit->getTrainSamples(), $randomSplit->getTrainLabels());
 
-    //$predictedLabels = $classifier->predict($randomSplit->getTestSamples());
+    // $predictedLabels = $classifier->predict($randomSplit->getTestSamples());
     $testpredictedLabels = $classifier->predict($testample);
 
     print_r($testpredictedLabels);// return  Array ( [0] => zh )
