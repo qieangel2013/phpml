@@ -51,4 +51,6 @@
 
     print_r($testpredictedLabels);// return  Array ( [0] => zh )
     exit;
-    
+ ### 项目地址
+    github：https://github.com/qieangel2013/phpml
+      码云：https://gitee.com/qieangel2013/phpml
