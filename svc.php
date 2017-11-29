@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
 use Phpml\Classification\SVC;
 use Phpml\SupportVectorMachine\Kernel;
 /*
-说一个班级里面有两个男生（男生1、男生2,男生3），两个女生（女生1、女生2,女生3），其中
+说一个班级里面有三个男生（男生1、男生2,男生3），三个女生（女生1、女生2,女生3），其中
 男生1 身高：176cm 体重：70kg；
 男生2 身高：180cm 体重：80kg；
 男生2 身高：186cm 体重：86kg；
