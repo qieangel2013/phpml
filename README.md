@@ -71,6 +71,7 @@
     print_r($classifier->predict([[152, 44], [176, 78]]));
     // return [-1, 1] 代表女生、男生
     exit;
+    
  ### 项目地址
     github：https://github.com/qieangel2013/phpml
       码云：https://gitee.com/qieangel2013/phpml
