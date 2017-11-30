@@ -1,6 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 use Phpml\Regression\LeastSquares;
+use Phpml\Regression\SVR;
 /*
 我们现在对一支股票进行预测
 张氏股从2010年开始
@@ -31,6 +32,10 @@ $labels = [1.1, 1.2, 2.1, 3.1, 3.3, 4.1,5.1];
 下面我们采用最小二乘法逼近线性模型进行预测
 */
 $regression = new LeastSquares();
+/*
+下面我们采用libsvm的向量回归进行预测
+*/
+$regression = new SVR(Kernel::LINEAR);
 
 /* 对其进行训练   */
 $regression->train($samples, $labels);
@@ -41,5 +46,5 @@ print_r($regression->predict([2017,190]));
 // return 5.7855968621641
 /*
 我们预测的结果是涨势5.78%
-该实例采用回归的最小二乘法算法来进行预测的
+该实例采用回归的最小二乘法算法和向量回归来进行预测的
 */
