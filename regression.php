@@ -45,6 +45,6 @@ $regression->train($samples, $labels);
 print_r($regression->predict([2017]));
 // return 5.53667
 /*
-我们预测的结果是涨势5.78%
+我们预测的结果是涨势5.53%
 该实例采用回归的最小二乘法算法和向量回归来进行预测的
 */
