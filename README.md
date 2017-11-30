@@ -107,7 +107,7 @@
     总结：这种算法根据一些行为来推断下一个行为
     */
  ### 回归预测学习
-    require_once 'vendor/autoload.php';
+     require_once 'vendor/autoload.php';
     use Phpml\Regression\LeastSquares;
     use Phpml\Regression\SVR;
     /*
@@ -131,7 +131,7 @@
     */
     /*将上面的数据放入$samples数组里
     */
-    $samples = [[2010, 123.5], [2011,124.5], [2012,134.5], [2013, 144], [2014, 144.7], [2015, 154.5],[2016,184.5]];
+    $samples = [[2010], [2011], [2012], [2013], [2014], [2015],[2016]];
     /*
     在labels中存入每年的股价涨势
     */
@@ -149,12 +149,13 @@
     /*
     如果我们想知道2017年张氏股的涨势是什么样的，我们用最小二乘法逼近线性模型来进行预测
     */
-    print_r($regression->predict([2017,190]));
-    // return 5.7855968621641
+    print_r($regression->predict([2017]));
+    // return 5.53667
     /*
     我们预测的结果是涨势5.78%
     该实例采用回归的最小二乘法算法和向量回归来进行预测的
     */
+    
  ### 项目地址
     github：https://github.com/qieangel2013/phpml
       码云：https://gitee.com/qieangel2013/phpml
